@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row clearfix">
+
+        <div class="panel panel-success">
+
+            <div class="panel-heading">JSON着色工具</div>
+            <div class="panel-body ">
+
+                <!--内容块开始-->
+                <div class="col-lg-12">
+                    <textarea class=" col-lg-12" rows="10" spellcheck="false" placeholder="Enter JSON to validate"
+                        [(ngModel)]="jsonStr"></textarea>
+                    <div class="col-lg-12">
+                        <button class="btn col-lg-1  btn-primary" (click)="formatJson()">格式化</button>
+                        <button class="btn col-lg-1  btn-danger" (click)="cleanJson()">清空</button>
+                    </div>
+                    <textarea class="col-lg-12" rows="10" spellcheck="false" placeholder="" [(ngModel)]="jsonFormatStr">
+                    </textarea>
+                    <div class="alert alert-danger col-lg-12" role="alert" *ngIf="errorMsg">{{errorMsg}}</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- <div class="panel panel-default">
+	<div class="panel-heading">
+		<div class="media">
+			<div class="media-body">
+				<h4 class="media-heading">JSON着色工具</h4>
+			</div>
+		</div>
+
+	</div>
+	
+
+	
+</div> -->

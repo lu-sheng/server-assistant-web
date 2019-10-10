@@ -1,0 +1,75 @@
+<!-- <p>timestamp works!</p> -->
+<div class="container">
+    <div class="row clearfix">
+        <br>
+        <div class="panel panel-default">
+            <div class="panel-heading panel-success" >
+              <h3 class="panel-title">当前时间</h3>
+            </div>
+        
+            <div class="panel-body">
+               时间戳：{{nowTimestamp}}
+            <br>
+               时  间：{{nowTimestampStr}}
+            </div>
+          </div>
+        <br>
+        <div class="panel panel-default">
+            <div class="panel-heading">将时间戳转换为时间</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">时间戳：</button>
+                            </span>
+                            <input type="text" class="form-control" placeholder="请输入时间戳" [(ngModel)]="timestamp1">
+                        </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+
+                    <button class="btn col-lg-1  btn-success" (click)="onClickTimestampToStr()">转换</button>
+
+                    <div class="col-lg-4">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default btn-default" type="button">时  间：</button>
+                            </span>
+                            <input type="text" class="form-control" placeholder="" [(ngModel)]="timestampStr1">
+                        </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+            </div>
+        </div>
+
+        <br>
+        <div class="panel panel-default">
+            <div class="panel-heading">将时间转换为时间戳</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">时  间：</button>
+                            </span>
+                            <input type="text" class="form-control" placeholder="请输入时间" [(ngModel)]="timestampStr2">
+                        </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+
+                    <button class="btn col-lg-1  btn-success" (click)="onClickStrToTimestamp()">转换</button>
+
+                    <div class="col-lg-4">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default btn-default" type="button">时间戳：</button>
+                            </span>
+                            <input type="text" class="form-control" placeholder="" [(ngModel)]="timestamp2">
+                        </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<br>

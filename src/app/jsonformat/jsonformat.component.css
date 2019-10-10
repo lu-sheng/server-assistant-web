@@ -1,0 +1,39 @@
+ /* 方法1：设置textarea合适的宽高 */
+ #jsonTextarea {
+    float: left;
+    margin-right: 20px;
+    width: 40%;
+    height: 70vh;
+    outline: none;
+    padding: 5px;
+}
+
+/* 方法2：自定义高亮样式 */
+#jsonPre {
+    float: left;
+    width: 40%;
+    height: 70vh;
+    outline: 1px solid #ccc;
+    padding: 5px;
+    overflow: scroll;
+}
+
+.string {
+    color: green;
+}
+
+.number {
+    color: darkorange;
+}
+
+.boolean {
+    color: blue;
+}
+
+.null {
+    color: magenta;
+}
+
+.key {
+    color: red;
+}
